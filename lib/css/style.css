@@ -35,6 +35,10 @@ body{
 .mt-n5{margin-top:-5rem!important}
 .mt-n10{margin-top:-10rem!important}
 
+.dot{
+    color:red;
+}
+
 .nav-brand a{
     color: white!important;
     font-size: 32px;
@@ -137,4 +141,13 @@ body{
 
 .sectionOne-title{
     font-size: 24px!important;
+}
+
+.footer-container{
+    background-color: #282438;
+}
+
+
+.content{
+    display:none
 }
