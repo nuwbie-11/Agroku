@@ -20,12 +20,24 @@
 	}
 }
 
+@keyframes slide{
+    0%{
+        opacity: 0;
+        transform: translateX(-10%);
+    }
+    100%{
+        opacity: 1;
+        transform: translateX(0%);
+    }
+}
+
 p{
     font-size: 16px;
 }
 
 body{
     overflow-x: hidden;
+    scroll-behavior: smooth;
 }
 
 .mt-n1{margin-top:-1rem!important}
@@ -37,6 +49,11 @@ body{
 
 .dot{
     color:red;
+}
+
+.navigation-bar{
+    transition: all .3s ease-in-out;
+    padding:0 7%;
 }
 
 .nav-brand a{
@@ -104,6 +121,10 @@ body{
     font-size:36px;
 }
 
+#canClick{
+    transition: all 0.3 ease-in-out;
+}
+
 .rm-arrow i{
     color: hsl(0, 0%, 60%);
 }
@@ -149,5 +170,35 @@ body{
 
 
 .content{
-    display:none
+    opacity: 0;
+    position: absolute;
+    top:-100%
+}
+
+.vis-active{
+    opacity: 1;
+    position: relative;
+    animation:slide .3s ease-in-out;
+
+}
+
+.notif{
+    font-size:12px;
+}
+
+.vis-none{
+    opacity:0;
+    position: absolute;
+    z-index: -9999;
+}
+
+.Change:hover{
+    cursor: pointer;
+    color: rgb(72, 99, 255);
+    text-decoration: underline;
+}
+
+.frm{
+    /* animation: slide .3s ease-in-out; */
+    transition: all .3s ease-in-out;
 }

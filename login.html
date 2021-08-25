@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Agroku | Login</title>
+
+    <!-- Animate -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet"> 
+    <!-- CSS -->
+    <link rel="stylesheet" href="lib/Bootstrap/B4.5/css/bootstrap.css">
+    <link rel="stylesheet" href="lib/css/style.css">
+    <link rel="stylesheet" href="lib/fonts/font-awesome/css/all.css">
+    <!-- Script -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.6/umd/popper.min.js"></script>
+</head>
+<body id="login">
+    <div class="navigation-bar fixed-top" style="padding:0 7%;">
+        <nav class="navbar navbar-expand-md navbar-dark">
+            <div class="nav-brand">
+                <a href="">Agroku<span>.</span></a>
+            </div>
+
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse nav-lists" id="navbarNavDropdown">
+                <ul class="navbar-nav ml-auto px-3 nav-list">
+                    <li class="nav-item">
+                        <a class="nav-menu menu-active" href="index.html">Beranda</a>
+                        <div class="beranda active"></div>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-menu" href="#feat">Tentang Kita</a>
+                        <div class="tentang"></div>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+    </div>
+
+
+
+    <section class="hero">
+        <div class="container" style="padding-top: 10%;">
+            <div class="card p-5">
+                <div class="signIn d-flex">
+                    <div class="form w-75">
+                        <h2>Sign In</h2>
+                        <form>
+                            <div class="form-group">
+                              <label for="exampleInputEmail1">Username</label>
+                              <input type="text" class="form-control" id="uname" aria-describedby="unameHelp">
+                              <!-- <small id="unamelHelp" class="form-text text-muted">We'll never share your email with anyone else.</small> -->
+                            </div>
+                            <div class="form-group">
+                              <label for="Password">Password</label>
+                              <input type="password" class="form-control" id="Password">
+                            </div>
+                            <div class="form-group form-check">
+                              <input type="checkbox" class="form-check-input" id="remember">
+                              <label class="form-check-label" for="remember">Remember me</label>
+                            </div>
+                            <button type="submit" class="btn btn-success">Submit</button>
+                        </form>
+                    </div>
+                    <div class="thumb">
+                        
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"></script>
+    <script src="lib/Bootstrap/B4.5/js/bootstrap.js"></script>
+    <script src="lib/JS/main.js" ></script>
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+      AOS.init();
+    </script>
+</body>
+</html>

@@ -62,8 +62,97 @@
         </nav>
     </div>
 
+    <div class="modal fade" id='modal-form' aria-labelledby="formModal" aria-hidden="true" >
+        <div class="modal-dialog forms" role="document">
+            
+            <div class="modal-content">
 
-    <section class="hero">
+
+                <section class="LogIn frm" id="logIn-head" >
+                    <div class="modal-header">
+                        <h5 class="modal-title In-title" id="SignIn-title">Sign In</h5>
+
+                    
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                            <span aria-hidden="true">&times;</span>
+                        </button>
+                    </div>
+
+                    <div class="modal-body">
+                        <form action="" >
+                            <div class="form-group">
+                                <div class="form-group row justify-content-start align-items-center px-4">
+                                    <i class="fas fa-user py-3"></i>
+                                    <div class="col-sm-11">
+                                        <input type="text" placeholder='username/email' name="uname" id="" class="form-control">
+                                    </div>
+                                </div>
+                                <div class="form-group row justify-content-start align-items-center px-4">
+                                    <i class="fas fa-lock py-3 "></i>
+                                    <div class="col-sm-11">
+                                        <input type="password" placeholder='password' name="pwd" id="" class="form-control">
+                                    </div>
+                                </div>
+                                <div class="form-group form-check px-5">
+                                    <input type="checkbox" class="form-check-input" id="exampleCheck1">
+                                    <label class="form-check-label" for="exampleCheck1">Remember Me</label>
+                                </div>
+                            </div>
+                        </form>
+                        <p class="notif px-5" >Didn't Have Account? <span class="Change to-SignUp">Register Here</span> </p>
+                    </div>
+
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                        <button type="button" class="btn btn-primary">Sign In</button>
+                      </div>
+                </section>
+
+
+                <section class="Register frm vis-none" id="SignUp" >
+
+                    <div class="modal-header">
+                        <h5 class="modal-title Up-title" id="SignUp-title">Sign Up</h5>
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                            <span aria-hidden="true">&times;</span>
+                        </button>
+                    </div>
+                    <div class="modal-body">
+                        <form action="">
+                            <div class="form-group">
+                                <div class="form-group row justify-content-start align-items-center px-4 uname">
+                                    <i class="fas fa-user py-3"></i>
+                                    <div class="col-sm-11">
+                                        <input type="text" placeholder='username/email' name="uname-regist" id="" class="form-control" required>
+                                    </div>
+                                </div>
+                                <div class="form-group row justify-content-start align-items-center px-4 pw">
+                                    <i class="fas fa-lock py-3 "></i>
+                                    <div class="col-sm-11">
+                                        <input type="password" placeholder='password' name="pwd" id="" class="form-control" required>
+                                    </div>
+                                </div>
+                                <div class="form-group row justify-content-start align-items-center px-4 retype">
+                                    <i class="fas fa-key py-3 "></i>
+                                    <div class="col-sm-11">
+                                        <input type="password" placeholder='re-type password' name="repwd" id="" class="form-control" required>
+                                    </div>
+                                </div>
+                            </div>
+                        </form>
+                        <p class="notif px-5">Already Have Account? <span class="Change to-SignIn">Sign In</span></p>
+                    </div>
+                    
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                        <button type="button" class="btn btn-primary">Sign Up</button>
+                    </div>
+              </div>     
+        </div>
+    </div>
+
+
+    <section class="hero" id="hero">
         <div class="container" style="padding-top: 15%;">
 
             <div class="heroText-section">
@@ -74,7 +163,7 @@
                             <hr class="bg-white">
                             <p class="text-white">Dengan memanfaatkan beberapa ilmu modern guna membantu keputusan dari pemilik industri</p>
                             <div class="button">
-                                <span class="button message">Gabung Sekarang</span>
+                                <span class="button message" data-toggle="modal" data-target="#modal-form" >Gabung Sekarang</span>
                             </div>
                         </div>
                     </div>
@@ -85,7 +174,7 @@
                 <div class="container">
                     <div class="RM-group text-center">
                         <div class="rm-arrow">
-                            <i class="fa-2x fas fa-chevron-down"></i>
+                            <i class="fa-2x fas fa-chevron-down arrow" id="canClick" ></i>
                         </div>
                         <div class="rm-text">
                             <p>read more</p>
@@ -108,8 +197,8 @@
     
 
     <section class="content">
-        <section class="one" style="padding:8% 0" >
-            <div class="container">
+        <section class="one" style="padding:8% 0"  id="content">
+            <div class="container" >
                 <div class="text-center title-section">
                     <h5 clas="sectionOne-title">Kenapa harus kami?</h5>
                 </div>
@@ -168,7 +257,7 @@
                     <p class="text-muted" style="font-size:12px;">mari sejahterakan agroindustri</p>
                 </div>
                 <div class="button text-center">
-                    <span class="button message text-white">Gabung Sekarang</span>
+                    <span class="button message text-white" data-toggle="modal" data-target="#modal-form" >Gabung Sekarang</span>
                 </div>
             </div>
         </section>
